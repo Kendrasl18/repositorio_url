@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono de la pagina -->
+    <link rel="icon" href="imagen/icono.png">
+    <title>Sunshine Hotel</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Inicio de la pagina, con el titulo y nombre -->
+        <section id="inicio">
+            <a href="#volver"></a>
+    <h1 style="color: aliceblue;">Sunshine Hotel Costa rica</h1>
+    <p style="color: aliceblue;">Hotel turistico en el Pacifico de Costa Rica</p>
+    </section>
+    </header>
+    
+<!-- Enlaces para navegar por la pagina de una manera mas rapida -->
+    <nav>
+        <ul>
+           <li><a href="#habitacion">Habitaciones</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#tarifas">Tarifas</a></li>
+            <li><a href="#reservacion">Reservación</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Breve descripción del hotel -->
+    <main>
+        <article>
+        <h3 style="color: aliceblue;"> El mejor hotel para toda la familia</h3>
+        <p>Contamos con los mejores espacios para disfrutar unas vacaciones</p>
+        <blockquote>
+            "Rodeate de la naturaleza"
+        </blockquote>
+        </article>
+
+        <!-- Información sobre las habitacones, con su nombre y una descrpción -->
+        <section id="habitacion">
+            <h2 style="color: aliceblue;">Habitaciones del Hotel</h2>
+            <dl>
+                <dt><strong>Habitación Estandar</strong></dt>
+                <dd>Cuenta con una cama matrimonial, un baño privado y balcon.
+                    <em>Perfecta para una pareja</em>
+                </dd>
+                <dt><strong>Habitación Familiar</strong></dt>
+                <dd>Cuenta con 2 camas matrimoniales y un sillon cama, tiene una capacidad 
+                    maxima de 5 personas. Tiene baño privado y acceso a la piscina.
+                </dd>
+                <dt><strong>Suite Premium</strong></dt>
+                <dd>Cuenta con una cama king, piscina privada, baño privado y balcon
+                    frente al mar. <em>2 personas max.</em>
+                </dd>
+            </dl>
+        </section>
+
+        <!-- Listas con los servicios y actividades del hotel -->
+        <section id="servicios">
+            <h2 style="color: aliceblue;">Servicios y Tours</h2>
+            <p>Contamos con servcios basicos y actividades en nuestro hotel, como tours por la zona</p>
+            <h3 style="color: aliceblue;">Servicios</h3>
+
+            <!-- Lista desordenada -->
+            <ul>
+                <li>Wi-Fi</li>
+                <li>Restaurantes</li>
+                <li>Piscina</li>
+                <li>Bicicletas</li>
+            </ul>
+            <!-- Lista ordenada -->
+            <h3 style="color: aliceblue;">Actividades</h3>
+            <ol>
+                <li>Canopy</li>
+                <li>Paseos en kayak</li>
+                <li>Caminatas</li>
+                <li>Buceo</li>
+                <li>Tours en bosques</li>
+            </ol>
+        </section>
+
+        <!-- Tabla con las tarifas del hotel, con su nombre y precio por noche -->
+        <section id="tarifas">
+            <h2 style="color: aliceblue;">Tarifas de las habitaciones</h2>
+
+            <table border="1">
+                <thead>
+                <th>Habitación</th>
+                <th>Precio por noche</th>
+                <th>Personas</th>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Habitación Estandar</td>
+                    <td>80$</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>Habitación Familiar</td>
+                    <td>150$</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>Suite Premium</td>
+                    <td>250$</td>
+                    <td>2</td>
+                </tr>
+                </tbody>
+
+                <tfoot>
+                <tr>
+                    <td colspan="3">
+                        Tarifas dependen de temporada
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Formulario para realizar una reservación -->
+        <section id="reservacion">
+            <h2 style="color: aliceblue;">Reservaciones</h2>
+            <p style="color: aliceblue;">Puede realizar su <strong>reserva</strong> aquí</p>
+            <p style="color: aliceblue;">En este enlace puedes realizra tu reserva</p>
+            <a href="formulario.html">Reservaciones</a>
+        </section>
+
+        <!-- Galeria del hotel, con imagenes, video y un audio relajante -->
+        <section id="galeria">
+            <h2 style="color: aliceblue;">Galería de nuestro hotel</h2>
+            <p style="color: aliceblue;">Puedes ver las instalaciones de nuestro hotel en este enlace</p>
+            <a href="galeria.html">Instalaciones</a>
+        </section>
+
+        <!-- Logo con svg del hotel -->
+        <section>
+            <h2 style="color: aliceblue;">Logo SVG del hotel</h2>
+            <svg width="400" height="250">
+                <circle cx="80" cy="80" r="40" fill="orange"></circle>
+                <rect x="0" y="150" width="400" height="150" fill="lightblue"></rect>
+                <polygon points="150,150 220,50 300,150" fill="green"></polygon>
+                <text x="150" y="220" font-size="24">Sunshine Hotel</text>
+            </svg>
+        </section>
+
+        <section id="ubicacion">
+            <h2 style="color: aliceblue;">Nuestra ubicación</h2>
+            <p style="color: aliceblue;">Estamos ubicados en el Pacifico de Costa Rica <br>
+            en Guanacaste de Costa Rica</p>
+            <p style="color: aliceblue;">Tenemos varias playas y bosques cerca de nuestro de hotel
+                para que pueda conectar con la naturaleza
+            </p>
+        </section>
+
+        <!-- Noticias y publicaciones del hotel -->
+        <aside>
+            <h2 style="color: aliceblue;">Ofertas</h2>
+            <p>Al reservar ya mismo, recibira un <strong>20% de descuento</strong> en una habitación estandar</p>
+            <p>Todas nuestras habitaciones estandar vienen con desayuno incluido</p>
+        </aside>
+
+        <!-- Parte final de la pagina -->
+        <footer>
+            Sunshine Hotel 2026
+            Pagina creada con html
+        </footer>
+        <!-- Con este enlace se puede regresar al inicio del la pagina -->
+         <a href="#inicio">Volver al inicio</a> <br>
+    </main>
+</body>
+</html>

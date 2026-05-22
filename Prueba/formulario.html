@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagen/icono.png">
+    <title>Reservaciones</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="">
+        <fieldset>
+            <legend>Datos del Cliente</legend>
+
+            <!-- Datos personales del cliente para su reserva -->
+            <label for="nombre_cliente">Nombre Completo: </label>
+            <input type="text"
+            name="nombre_cliente"
+            id="nombre_cliente"
+            maxlength="50"
+            minlength="3"
+            placeholder="Ingrese su nombre"
+            required> 
+            <br><br>
+
+            <label for="correo">Correo Electronico: </label>
+            <input type="email"
+            name="correo"
+            id="correo"
+            placeholder="ejemplo@gmail.com"
+            required>
+            <br><br>
+
+            <label for="numero">Numero de Telefono: </label>
+            <input type="text"
+            id="numero"
+            placeholder="88888888"
+            required>
+            <br><br>
+
+            <label for="edad">Ingrese su edad: </label>
+            <input type="text"
+            name="edad"
+            id="edad"
+            required>
+            <br><br>
+
+            <!-- Debe de ingresar la fecha de entrada y de salida para poder ingresar al cliente -->
+            <label for="fecha_entrada">Ingrese su fecha de entrada: </label>
+            <input type="date"
+            name="fecha_entrada"
+            id="fecha_entrada"
+            required>
+            <br><br>
+
+            <label for="fecha_salida">Ingrese su fecha de salida: </label>
+            <input type="date"
+            name="fecha_salida"
+            id="fecha_salida"
+            required>
+            <br><br>
+
+            <!-- Debe seleccionar la habitación que va a reservar -->
+            <p style="color: aliceblue;">Selecciones su habitación</p>
+
+            <label for="habitación">Tipo de habitación</label>
+            <select name="habitación" id="habitación">
+                <option value="">Elija una habitación</option>
+                <option value="habitación estandar">Habitación estandar</option>
+                <option value="habitación familiar">Habitación familiar</option>
+                <option value="suite premium">Suite Premium</option>
+            </select>
+            
+
+            <p style="color: aliceblue;">Escoja un servicio</p>
+
+            <!-- El cliente puede escoger que servicio le gustaria agregar de mas -->
+            <input type="checkbox"
+            name="desayuno"
+            id="desayuno">
+            <label for="desayuno">Desayuno</label>
+            <br>
+
+            <input type="checkbox"
+            name="tours"
+            id="tours">
+            <label for="tours">Tours</label>
+
+            <p style="color: aliceblue;">Selecciones un metodo de pago</p>
+
+            <!-- El cliente debe de escoger el metodo de pago obligatoriamente -->
+            <input type="radio"
+            name="pago"
+            id="tarjeta"
+            value="tarjeta"
+            required>
+            <label for="tarjeta">Tarjeta</label>
+
+            <input type="radio"
+            name="pago"
+            id="efectivo"
+            value="efectivo"
+            required>
+            <label for="efectivo">Efectivo</label>
+            <br><br>
+
+            <!-- Puede agregar algun comentario para el hotel -->
+            <p style="color: aliceblue;">Ingrese sus comentarios</p>
+            <textarea name="comentarios" id="comentarios"
+            maxlength="100" minlength="2">
+            </textarea>
+            <br><br>
+
+            <!-- Este boton envia la reserva -->
+            <button type="submit">
+                Reservar
+            </button>
+
+            <!-- Este boton limpia el formulario si el cliente quiere realizarlo de nuevo -->
+            <button type="reset">
+                Limpiar
+            </button>
+
+        </fieldset>
+    </form>
+    <p>Con este enlace puedes regresar a nuestra </p><a href="index.html">Pagina principal</a>
+</body>
+</html>
